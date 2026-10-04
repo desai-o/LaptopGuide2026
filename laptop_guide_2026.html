@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>laptop guide 2026</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+                    },
+                    colors: {
+                        apple: {
+                            bg: '#f2f2f7',
+                            card: 'rgba(255, 255, 255, 0.75)',
+                            darkBg: '#000000',
+                            darkCard: 'rgba(28, 28, 30, 0.75)',
+                            blue: '#0071e3',
+                            blueHover: '#0077ed',
+                            purple: '#af52de',
+                            red: '#ff3b30',
+                            green: '#34c759',
+                            orange: '#ff9500',
+                            gray: '#8e8e93',
+                            lightGray: '#e5e5ea'
+                        }
+                    },
+                    boxShadow: {
+                        'macos': '0 10px 30px -10px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04)',
+                        'macos-lg': '0 20px 40px -15px rgba(0, 0, 0, 0.15)',
+                        'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.06)'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            background-color: #f2f2f7;
+            color: #1d1d1f;
+        }
+
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.78);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+        }
+
+        .tab-btn.active {
+            background-color: #ffffff;
+            color: #0071e3;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(0,0,0,0.15);
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased selection:bg-apple-blue selection:text-white">
+
+    <header class="sticky top-0 z-50 glass-panel border-b border-gray-200/60 ">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                
+                <!-- macOS Window controls & Title -->
+                <div class="flex items-center space-x-3">
+                    <div class="flex items-center space-x-2">
+                        <i class="fa-solid fa-microchip text-apple-blue text-lg"></i>
+                        <span class="font-bold text-sm sm:text-base tracking-tight text-gray-900 ">
+                            Laptop Hardware & Brand Bible
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Right controls & search toggle -->
+                <div class="flex items-center space-x-3">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+        <div class="mb-8 text-center max-w-3xl mx-auto">
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-900  tracking-tight mb-3">
+                Master Guide to Laptop Specs & Brands
+            </h1>
+            <p class="text-xs sm:text-sm text-gray-600  leading-relaxed">
+                A simple guide created for Computer Science students and non-tech family members. Decode marketing jargon, avoid traps, and choose the ideal specs.
+            </p>
+        </div>
+
+        <!-- Rating Key Header -->
+        <div class="glass-panel rounded-2xl p-4 mb-8 shadow-macos">
+            <div class="text-[11px] font-bold uppercase tracking-wider text-gray-500  text-center mb-3">
+                Universal Color Coding Rating Key
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-xs">
+                <div class="p-2.5 rounded-xl bg-red-500/10 border border-red-500/20 text-red-700  flex items-center space-x-2">
+                    <span class="w-3 h-3 rounded-full bg-apple-red shrink-0"></span>
+                    <div>
+                        <div class="font-bold">RED = TRAP / BAD</div>
+                        <div class="text-[10px] opacity-80">Slow, unexpandable, low build</div>
+                    </div>
+                </div>
+                <div class="p-2.5 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-700  flex items-center space-x-2">
+                    <span class="w-3 h-3 rounded-full bg-apple-orange shrink-0"></span>
+                    <div>
+                        <div class="font-bold">ORANGE = CAUTION</div>
+                        <div class="text-[10px] opacity-80">Trade-offs (e.g., short battery)</div>
+                    </div>
+                </div>
+                <div class="p-2.5 rounded-xl bg-green-500/10 border border-green-500/20 text-green-700  flex items-center space-x-2">
+                    <span class="w-3 h-3 rounded-full bg-apple-green shrink-0"></span>
+                    <div>
+                        <div class="font-bold">GREEN = SWEET SPOT</div>
+                        <div class="text-[10px] opacity-80">Recommended for value & lifespan</div>
+                    </div>
+                </div>
+                <div class="p-2.5 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-700  flex items-center space-x-2">
+                    <span class="w-3 h-3 rounded-full bg-apple-purple shrink-0"></span>
+                    <div>
+                        <div class="font-bold">PURPLE = OVERKILL</div>
+                        <div class="text-[10px] opacity-80">Unnecessary expense & heat</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-center mb-8">
+            <div class="glass-panel p-1.5 rounded-2xl flex flex-wrap justify-center gap-1 max-w-full overflow-x-auto text-xs sm:text-sm font-semibold shadow-macos">
+                <button onclick="switchTab('brands')" id="tab-btn-brands" class="tab-btn active px-4 py-2 rounded-xl transition flex items-center gap-2">
+                    <i class="fa-solid fa-building"></i> <span>Brand Guide</span>
+                </button>
+                <button onclick="switchTab('cpus')" id="tab-btn-cpus" class="tab-btn px-4 py-2 text-gray-600  rounded-xl transition flex items-center gap-2">
+                    <i class="fa-solid fa-microchip"></i> <span>Processors (CPU)</span>
+                </button>
+                <button onclick="switchTab('ram')" id="tab-btn-ram" class="tab-btn px-4 py-2 text-gray-600  rounded-xl transition flex items-center gap-2">
+                    <i class="fa-solid fa-memory"></i> <span>RAM Memory</span>
+                </button>
+                <button onclick="switchTab('misc')" id="tab-btn-misc" class="tab-btn px-4 py-2 text-gray-600  rounded-xl transition flex items-center gap-2">
+                    <i class="fa-solid fa-hard-drive"></i> <span>Storage, Camera & Display</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- ========================================================================= -->
+        <!-- SECTION 1: BRAND GUIDE                                                    -->
+        <!-- ========================================================================= -->
+        <section id="section-brands" class="tab-section space-y-6">
+            <div class="glass-panel rounded-3xl p-6 sm:p-8 shadow-macos">
+                <div class="mb-6">
+                    <h2 class="text-2xl font-bold text-gray-900  flex items-center gap-2.5">
+                        <i class="fa-solid fa-layer-group text-apple-blue"></i> Major Laptop Brand Breakdown
+                    </h2>
+                    <p class="text-xs sm:text-sm text-gray-500  mt-1">
+                        Not all laptops from the same brand are built equally. Brands make premium series (durable, metallic, great keyboards) alongside cheap budget series (plastic flex, weak hinges).
+                    </p>
+                </div>
+
+                <!-- Brand Cards Grid -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+                    <!-- LENOVO -->
+                    <div class="p-5 rounded-2xl bg-white/60  border border-gray-200/60  space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 rounded-xl bg-red-600 text-white flex items-center justify-center font-extrabold text-sm tracking-wider">
+                                    LEN
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-gray-900 ">Lenovo</h3>
+                                    <span class="text-xs text-gray-500 ">India Service: <strong class="text-apple-green">Excellent (Wide coverage)</strong></span>
+                                </div>
+                            </div>
+                            <span class="px-2.5 py-1 rounded-full text-[10px] font-bold bg-apple-green/10 text-apple-green border border-apple-green/20">
+                                TOP CSE CHOICE
+                            </span>
+                        </div>
+
+                        <p class="text-xs text-gray-600 ">
+                            Lenovo leads in keyboard quality and durability, particularly in its business line.
+                        </p>
+
+                        <div class="space-y-2 text-xs">
+                            <div class="p-2.5 rounded-xl bg-green-500/10 border border-green-500/20 text-green-800 ">
+                                <div class="font-bold flex items-center justify-between">
+                                    <span>ThinkPad Series (E14, E16, T14, L14)</span>
+                                    <span class="text-[10px] uppercase font-extrabold px-2 py-0.5 rounded bg-green-500 text-white">Green - Recommended</span>
+                                </div>
+                                <div class="text-[11px] mt-1 opacity-90">
+                                    Built like a tank, spill-resistant legendary keyboard, easy to service. ThinkPad E series is the best sweet-spot for CSE students.
+                                </div>
+                            </div>
+
+                            <div class="p-2.5 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-800 ">
+                                <div class="font-bold flex items-center justify-between">
+                                    <span>IdeaPad Slim 3 / Slim 1</span>
+                                    <span class="text-[10px] uppercase font-extrabold px-2 py-0.5 rounded bg-amber-500 text-white">Orange - Caution</span>
+                                </div>
+                                <div class="text-[11px] mt-1 opacity-90">
+                                    Budget plastic chassis. Hinge flex is common. Avoid cheap versions with TN screens or 8GB non-expandable RAM.
+                                </div>
+                            </div>
+
+                            <div class="p-2.5 rounded-xl bg-green-500/10 border border-green-500/20 text-green-800 ">
+                                <div class="font-bold flex items-center justify-between">
+                                    <span>IdeaPad Slim 5 / Yoga Slim</span>
+                                    <span class="text-[10px] uppercase font-extrabold px-2 py-0.5 rounded bg-green-500 text-white">Green - Good</span>
+                                </div>
+                                <div class="text-[11px] mt-1 opacity-90">
+                                    Full metal lid, crisp IPS screens, long battery life. Premium feeling for non-tech buyers.
+                                </div>
+                            </div>
+
+                            <div class="p-2.5 rounded-xl bg-green-500/10 border border-green-500/20 text-green-800 ">
+                                <div class="font-bold flex items-center justify-between">
+                                    <span>LOQ / Legion (Gaming)</span>
+                                    <span class="text-[10px] uppercase font-extrabold px-2 py-0.5 rounded bg-green-500 text-white">Green / Orange</span>
+                                </div>
+                                <div class="text-[11px] mt-1 opacity-90">
+                                    Great for AI/ML and heavy graphics work. Caution: LOQ Intel 13th gen motherboard issues reported in older batches; Ryzen models preferred.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ASUS -->
+                    <div class="p-5 rounded-2xl bg-white/60  border border-gray-200/60  space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 rounded-xl bg-black text-white flex items-center justify-center font-extrabold text-xs tracking-wider">
+                                    ASUS
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-gray-900 ">ASUS</h3>
+                                    <span class="text-xs text-gray-500 ">India Service: <strong class="text-apple-green">Good (Metro cities)</strong></span>
+                                </div>
+                            </div>
+                            <span class="px-2.5 py-1 rounded-full text-[10px] font-bold bg-apple-blue/10 text-apple-blue border border-apple-blue/20">
+                                INNOVATIVE / DISPLAY LEADER
+                            </span>
+                        </div>
+
+                        <p class="text-xs text-gray-600 ">
+                            Pioneer in bringing vibrant OLED displays and high performance into budget laptops.
+                        </p>
+
+                        <div class="space-y-2 text-xs">
+                            <div class="p-2.5 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-800 ">
+                                <div class="font-bold flex items-center justify-between">
+                                    <span>Vivobook Go 14/15</span>
+                                    <span class="text-[10px] uppercase font-extrabold px-2 py-0.5 rounded bg-amber-500 text-white">Orange - Caution</span>
+                                </div>
+                                <div class="text-[11px] mt-1 opacity-90">
+                                    Entry level plastic laptops. Often come with soldered RAM. Ensure you choose models with 16GB pre-installed.
+                                </div>
+                            </div>
+
+                            <div class="p-2.5 rounded-xl bg-green-500/10 border border-green-500/20 text-green-800 ">
+                                <div class="font-bold flex items-center justify-between">
+                                    <span>Vivobook S14 / ZenBook 14</span>
+                                    <span class="text-[10px] uppercase font-extrabold px-2 py-0.5 rounded bg-green-500 text-white">Green - Sweet Spot</span>
+                                </div>
+                                <div class="text-[11px] mt-1 opacity-90">
+                                    Sleek aluminum chassis, lightweight, Evo-certified battery life, gorgeous screens.
+                                </div>
+                            </div>
+
+                            <div class="p-2.5 rounded-xl bg-green-500/10 border border-green-500/20 text-green-800 ">
+                                <div class="font-bold flex items-center justify-between">
+                                    <span>TUF Gaming (A15 / F15)</span>
+                                    <span class="text-[10px] uppercase font-extrabold px-2 py-0.5 rounded bg-green-500 text-white">Green - Value Gaming</span>
+                                </div>
+                                <div class="text-[11px] mt-1 opacity-90">
+                                    Military-grade drop testing certification, dual cooling fans, easy RAM upgradeability for coding & AI.
+                                </div>
+                            </div>
+
+                            <div class="p-2.5 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-800 ">
+                                <div class="font-bold flex items-center justify-between">
+                                    <span>ROG Zephyrus / Strix</span>
+                                    <span class="text-[10px] uppercase font-extrabold px-2 py-0.5 rounded bg-purple-500 text-white">Purple - Overkill</span>
+                                </div>
+                                <div class="text-[11px] mt-1 opacity-90">
+                                    High-end gaming systems costing ₹1.5L - ₹3.0L. Impressive performance, but unnecessary for standard CSE coursework.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- APPLE -->
+                    <div class="p-5 rounded-2xl bg-white/60  border border-gray-200/60  space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 rounded-xl bg-gray-900 text-white flex items-center justify-center font-extrabold text-base">
+                                    <i class="fa-brands fa-apple"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-gray-900 ">Apple</h3>
+                                    <span class="text-xs text-gray-500 ">India Service: <strong class="text-apple-green">Premium Authorized Centers</strong></span>
+                                </div>
+                            </div>
+                            <span class="px-2.5 py-1 rounded-full text-[10px] font-bold bg-apple-purple/10 text-apple-purple border border-apple-purple/20">
+                                BATTERY KING
+                            </span>
+                        </div>
+
+                        <p class="text-xs text-gray-600 ">
+                            Unmatched 15-20 hour real-world battery, zero fan noise on Air, best touchpad and speakers in the industry.
+                        </p>
+
+                        <div class="space-y-2 text-xs">
+                            <div class="p-2.5 rounded-xl bg-green-500/10 border border-green-500/20 text-green-800 ">
+                                <div class="font-bold flex items-center justify-between">
+                                    <span>MacBook Air M1 / M2 / M3 (16GB RAM)</span>
+                                    <span class="text-[10px] uppercase font-extrabold px-2 py-0.5 rounded bg-green-500 text-white">Green - Ultimate Portable</span>
+                                </div>
+                                <div class="text-[11px] mt-1 opacity-90">
+                                    Ideal for web development, python, and daily student life. Highly reliable battery.
+                                </div>
+                            </div>
+
+                            <div class="p-2.5 rounded-xl bg-red-500/10 border border-red-500/20 text-red-800 ">
+                                <div class="font-bold flex items-center justify-between">
+                                    <span>MacBook Air Base 8GB Unified RAM</span>
+                                    <span class="text-[10px] uppercase font-extrabold px-2 py-0.5 rounded bg-red-500 text-white">Red - Trap for CSE</span>
+                                </div>
+                                <div class="text-[11px] mt-1 opacity-90">
+                                    Cannot be upgraded after purchase. 8GB Unified RAM bottlenecks heavy coding applications like Android Studio & Docker. Always select 16GB+.
+                                </div>
+                            </div>
+
+                            <div class="p-2.5 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-800 ">
+                                <div class="font-bold flex items-center justify-between">
+                                    <span>MacBook Pro 16" M3 Max</span>
+                                    <span class="text-[10px] uppercase font-extrabold px-2 py-0.5 rounded bg-purple-500 text-white">Purple - Extreme Overkill</span>
+                                </div>
+                                <div class="text-[11px] mt-1 opacity-90">
+                                    Costs over ₹3.5 Lakhs. Designed for 8K video rendering professionals, not undergrad college students.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DELL & HP -->
+                    <div class="p-5 rounded-2xl bg-white/60  border border-gray-200/60  space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center font-extrabold text-xs tracking-wider">
+                                    DELL/HP
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-gray-900 ">Dell & HP</h3>
+                                    <span class="text-xs text-gray-500 ">India Service: <strong class="text-apple-green">Massive offline retail presence</strong></span>
+                                </div>
+                            </div>
+                            <span class="px-2.5 py-1 rounded-full text-[10px] font-bold bg-amber-500/10 text-amber-600 border border-amber-500/20">
+                                BRAND RECOGNITION
+                            </span>
+                        </div>
+
+                        <p class="text-xs text-gray-600 ">
+                            Household names across India. Very easy to find physical repair stores, but watch out for lower spec value in cheap models.
+                        </p>
+
+                        <div class="space-y-2 text-xs">
+                            <div class="p-2.5 rounded-xl bg-red-500/10 border border-red-500/20 text-red-800 ">
+                                <div class="font-bold flex items-center justify-between">
+                                    <span>Dell Inspiron 3000 / HP 15s (Cheap variants)</span>
+                                    <span class="text-[10px] uppercase font-extrabold px-2 py-0.5 rounded bg-red-500 text-white">Red - Low Value</span>
+                                </div>
+                                <div class="text-[11px] mt-1 opacity-90">
+                                    Overpriced for what they offer. Frequently feature dim 220-nit screens, plastic body flex, and single-channel RAM slots.
+                                </div>
+                            </div>
+
+                            <div class="p-2.5 rounded-xl bg-green-500/10 border border-green-500/20 text-green-800 ">
+                                <div class="font-bold flex items-center justify-between">
+                                    <span>HP Pavilion Plus / Dell Latitude Refurbs</span>
+                                    <span class="text-[10px] uppercase font-extrabold px-2 py-0.5 rounded bg-green-500 text-white">Green - Good Choice</span>
+                                </div>
+                                <div class="text-[11px] mt-1 opacity-90">
+                                    Pavilion Plus offers high resolution 120Hz screens. Corporate refurbished Dell Latitudes offer enterprise build quality under ₹35k.
+                                </div>
+                            </div>
+
+                            <div class="p-2.5 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-800 ">
+                                <div class="font-bold flex items-center justify-between">
+                                    <span>Dell XPS 13 / HP Spectre x360</span>
+                                    <span class="text-[10px] uppercase font-extrabold px-2 py-0.5 rounded bg-purple-500 text-white">Purple - Overpriced Aesthetics</span>
+                                </div>
+                                <div class="text-[11px] mt-1 opacity-90">
+                                    Gorgeous designs costing ₹1.4L+. You are paying 50% extra for cosmetics rather than processing power.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================================= -->
+        <!-- SECTION 2: PROCESSOR (CPU) GUIDE                                          -->
+        <!-- ========================================================================= -->
+        <section id="section-cpus" class="tab-section hidden space-y-6">
+            <div class="glass-panel rounded-3xl p-6 sm:p-8 shadow-macos">
+                <div class="mb-6">
+                    <h2 class="text-2xl font-bold text-gray-900  flex items-center gap-2.5">
+                        <i class="fa-solid fa-microchip text-apple-blue"></i> Processor (CPU) Decoder
+                    </h2>
+                    <p class="text-xs sm:text-sm text-gray-500  mt-1">
+                        The CPU is the "brain" of the computer. Don't be fooled by high model numbers; understanding suffix letters matters more!
+                    </p>
+                </div>
+
+                <!-- Interactive CPU Finder Widget -->
+                <div class="p-5 rounded-2xl bg-apple-blue/10 border border-apple-blue/20 mb-8">
+                    <h3 class="text-base font-bold text-gray-900  mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-wand-magic-sparkles text-apple-blue"></i> Interactive CPU Finder
+                    </h3>
+                    <p class="text-xs text-gray-600  mb-4">
+                        Select what you plan to do on the laptop, and we'll show you the exact CPU tier you need.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-4">
+                        <button onclick="recommendCPU('basic')" class="p-3 rounded-xl bg-white  border text-left hover:border-apple-blue transition">
+                            <div class="font-bold text-xs text-gray-900 ">📄 Non-Tech & Basic</div>
+                            <div class="text-[11px] text-gray-500">Browsing, Word, Excel, Zoom, YouTube</div>
+                        </button>
+                        <button onclick="recommendCPU('cse')" class="p-3 rounded-xl bg-white  border text-left hover:border-apple-blue transition">
+                            <div class="font-bold text-xs text-gray-900 ">💻 Standard CSE Student</div>
+                            <div class="text-[11px] text-gray-500">Python, Java, Web Dev, VS Code, Linux</div>
+                        </button>
+                        <button onclick="recommendCPU('aiml')" class="p-3 rounded-xl bg-white  border text-left hover:border-apple-blue transition">
+                            <div class="font-bold text-xs text-gray-900 ">🤖 AI / ML / Gaming</div>
+                            <div class="text-[11px] text-gray-500">Heavy Machine Learning, 3D Gaming, Video</div>
+                        </button>
+                    </div>
+
+                    <div id="cpu-recommendation-box" class="p-4 rounded-xl bg-white  border border-gray-200  text-xs">
+                        <span class="text-gray-500">Click a scenario above to get an instant recommendation.</span>
+                    </div>
+                </div>
+
+                <!-- CPU Suffix Cheat Sheet -->
+                <div class="mb-8">
+                    <h3 class="text-base font-bold text-gray-900  mb-3">
+                        The Secret Code: CPU Suffix Letters (Intel & AMD)
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+                        <div class="p-4 rounded-xl bg-green-500/10 border border-green-500/20">
+                            <div class="font-bold text-green-700  text-sm">U Series (e.g., i5-1335U, Ryzen 5 7530U)</div>
+                            <div class="font-medium text-gray-700  mt-1">Ultra-Low Power / Battery Saver</div>
+                            <p class="text-gray-600  mt-2 text-[11px]">
+                                Produces little heat. Battery lasts 8-12 hours. Excellent for thin-and-light laptops, web dev, and lectures.
+                            </p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-blue-500/10 border border-blue-500/20">
+                            <div class="font-bold text-blue-700  text-sm">P / HS Series (e.g., i5-1340P, Ryzen 7 7840HS)</div>
+                            <div class="font-medium text-gray-700  mt-1">Balanced Power & Efficiency</div>
+                            <p class="text-gray-600  mt-2 text-[11px]">
+                                The sweet spot for smooth performance without turning your laptop into a hot brick.
+                            </p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-amber-500/10 border border-amber-500/20">
+                            <div class="font-bold text-amber-700  text-sm">H / HX Series (e.g., i7-13700H, Ryzen 7 7745HX)</div>
+                            <div class="font-medium text-gray-700  mt-1">High Performance Gaming</div>
+                            <p class="text-gray-600  mt-2 text-[11px]">
+                                Maximum power, high fan noise, heavy charger brick. Battery lasts only 2 to 4 hours.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CPU Ratings Comparison Grid -->
+                <div class="space-y-3">
+                    <h3 class="text-base font-bold text-gray-900 ">
+                        Complete CPU Rating Breakdown
+                    </h3>
+
+                    <!-- Celeron / N100 / Low Clock -->
+                    <div class="p-3.5 rounded-xl bg-red-500/10 border border-red-500/20 text-xs flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                        <div>
+                            <span class="font-bold text-red-700  text-sm">Intel Celeron, Pentium, N100, N200, Athlon Silver</span>
+                            <p class="text-gray-600  text-[11px] mt-0.5">Dual-core or low clock speed. Struggles even with Windows updates.</p>
+                        </div>
+                        <span class="px-2.5 py-1 rounded-full bg-red-500 text-white font-bold text-[10px] uppercase shrink-0">RED - AVOID TRAP</span>
+                    </div>
+
+                    <!-- Core i3 / Ryzen 3 -->
+                    <div class="p-3.5 rounded-xl bg-amber-500/10 border border-amber-500/20 text-xs flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                        <div>
+                            <span class="font-bold text-amber-700  text-sm">Intel Core i3 / AMD Ryzen 3 (12th/13th Gen)</span>
+                            <p class="text-gray-600  text-[11px] mt-0.5">Good for basic office work & web browsing. Slightly underpowered for heavy CSE compilers.</p>
+                        </div>
+                        <span class="px-2.5 py-1 rounded-full bg-amber-500 text-white font-bold text-[10px] uppercase shrink-0">ORANGE - ENTRY LEVEL</span>
+                    </div>
+
+                    <!-- Core i5 / Ryzen 5 / Apple M1/M2/M3 -->
+                    <div class="p-3.5 rounded-xl bg-green-500/10 border border-green-500/20 text-xs flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                        <div>
+                            <span class="font-bold text-green-700  text-sm">Intel Core i5 / AMD Ryzen 5 / Intel Ultra 5 / Apple M1/M2/M3</span>
+                            <p class="text-gray-600  text-[11px] mt-0.5">The Golden Standard. Ideal performance-to-price ratio for coding, multi-tasking, and college life.</p>
+                        </div>
+                        <span class="px-2.5 py-1 rounded-full bg-green-500 text-white font-bold text-[10px] uppercase shrink-0">GREEN - RECOMMENDED SWEET SPOT</span>
+                    </div>
+
+                    <!-- Core i7 / Ryzen 7 -->
+                    <div class="p-3.5 rounded-xl bg-green-500/10 border border-green-500/20 text-xs flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                        <div>
+                            <span class="font-bold text-green-700  text-sm">Intel Core i7 / AMD Ryzen 7 / Intel Ultra 7</span>
+                            <p class="text-gray-600  text-[11px] mt-0.5">Excellent for heavy compiling, virtual machines, and gaming. Highly recommended if budget allows.</p>
+                        </div>
+                        <span class="px-2.5 py-1 rounded-full bg-green-500 text-white font-bold text-[10px] uppercase shrink-0">GREEN - HIGH PERFORMANCE</span>
+                    </div>
+
+                    <!-- Core i9 / Ryzen 9 / Apple Max -->
+                    <div class="p-3.5 rounded-xl bg-purple-500/10 border border-purple-500/20 text-xs flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                        <div>
+                            <span class="font-bold text-purple-700  text-sm">Intel Core i9 / AMD Ryzen 9 / Apple M3 Max</span>
+                            <p class="text-gray-600  text-[11px] mt-0.5">Generates intense heat, drains battery rapidly, and costs a fortune. Pure overkill for standard students.</p>
+                        </div>
+                        <span class="px-2.5 py-1 rounded-full bg-purple-500 text-white font-bold text-[10px] uppercase shrink-0">PURPLE - OVERKILL</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================================= -->
+        <!-- SECTION 3: RAM GUIDE & INTERACTIVE CALCULATOR                             -->
+        <!-- ========================================================================= -->
+        <section id="section-ram" class="tab-section hidden space-y-6">
+            <div class="glass-panel rounded-3xl p-6 sm:p-8 shadow-macos">
+                <div class="mb-6">
+                    <h2 class="text-2xl font-bold text-gray-900  flex items-center gap-2.5">
+                        <i class="fa-solid fa-memory text-apple-purple"></i> RAM (System Memory) Explained
+                    </h2>
+                    <p class="text-xs sm:text-sm text-gray-500  mt-1">
+                        Think of RAM as your physical desk space. A small desk holds only 1 open book before cluttering; a large desk holds 10 books at once.
+                    </p>
+                </div>
+
+                <!-- Interactive RAM Estimator Tool -->
+                <div class="p-6 rounded-2xl bg-white/80  border border-gray-200  shadow-sm mb-8">
+                    <h3 class="text-base font-bold text-gray-900  mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-calculator text-apple-purple"></i> Real-Time RAM Demand Simulator
+                    </h3>
+                    <p class="text-xs text-gray-600  mb-4">
+                        Toggle the applications you plan to keep open simultaneously to calculate expected RAM usage:
+                    </p>
+
+                    <!-- Apps Toggles Grid -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 mb-6">
+                        <label class="p-3 rounded-xl bg-gray-100  border flex items-center justify-between cursor-pointer text-xs">
+                            <span class="font-medium text-gray-800 ">Chrome (15 Tabs)</span>
+                            <input type="checkbox" id="ram-app-chrome" checked onchange="calculateRAMUsage()" class="rounded text-apple-blue focus:ring-apple-blue">
+                        </label>
+                        <label class="p-3 rounded-xl bg-gray-100  border flex items-center justify-between cursor-pointer text-xs">
+                            <span class="font-medium text-gray-800 ">VS Code IDE</span>
+                            <input type="checkbox" id="ram-app-vscode" checked onchange="calculateRAMUsage()" class="rounded text-apple-blue focus:ring-apple-blue">
+                        </label>
+                        <label class="p-3 rounded-xl bg-gray-100  border flex items-center justify-between cursor-pointer text-xs">
+                            <span class="font-medium text-gray-800 ">Zoom / Teams Call</span>
+                            <input type="checkbox" id="ram-app-zoom" onchange="calculateRAMUsage()" class="rounded text-apple-blue focus:ring-apple-blue">
+                        </label>
+                        <label class="p-3 rounded-xl bg-gray-100  border flex items-center justify-between cursor-pointer text-xs">
+                            <span class="font-medium text-gray-800 ">Android Studio</span>
+                            <input type="checkbox" id="ram-app-android" onchange="calculateRAMUsage()" class="rounded text-apple-blue focus:ring-apple-blue">
+                        </label>
+                        <label class="p-3 rounded-xl bg-gray-100  border flex items-center justify-between cursor-pointer text-xs">
+                            <span class="font-medium text-gray-800 ">Docker / Linux VM</span>
+                            <input type="checkbox" id="ram-app-docker" onchange="calculateRAMUsage()" class="rounded text-apple-blue focus:ring-apple-blue">
+                        </label>
+                        <label class="p-3 rounded-xl bg-gray-100  border flex items-center justify-between cursor-pointer text-xs">
+                            <span class="font-medium text-gray-800 ">Spotify / Music</span>
+                            <input type="checkbox" id="ram-app-spotify" checked onchange="calculateRAMUsage()" class="rounded text-apple-blue focus:ring-apple-blue">
+                        </label>
+                        <label class="p-3 rounded-xl bg-gray-100  border flex items-center justify-between cursor-pointer text-xs">
+                            <span class="font-medium text-gray-800 ">PyTorch / AI Training</span>
+                            <input type="checkbox" id="ram-app-ai" onchange="calculateRAMUsage()" class="rounded text-apple-blue focus:ring-apple-blue">
+                        </label>
+                        <label class="p-3 rounded-xl bg-gray-100  border flex items-center justify-between cursor-pointer text-xs">
+                            <span class="font-medium text-gray-800 ">3D Game (Valorant/GTA)</span>
+                            <input type="checkbox" id="ram-app-game" onchange="calculateRAMUsage()" class="rounded text-apple-blue focus:ring-apple-blue">
+                        </label>
+                    </div>
+
+                    <!-- RAM Progress Bar Output -->
+                    <div class="space-y-2">
+                        <div class="flex justify-between items-center text-xs font-bold">
+                            <span class="text-gray-700 ">Estimated Total RAM Demand:</span>
+                            <span id="ram-meter-value" class="text-sm text-apple-blue">6.5 GB RAM</span>
+                        </div>
+                        <div class="w-full h-4 bg-gray-200  rounded-full overflow-hidden p-0.5">
+                            <div id="ram-meter-bar" class="h-full bg-apple-green rounded-full transition-all duration-500" style="width: 40%;"></div>
+                        </div>
+                        <div id="ram-meter-verdict" class="text-xs text-gray-600  pt-1">
+                            Verdict calculation loading...
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soldered vs Expandable Explanation -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                    <div class="p-5 rounded-2xl bg-red-500/10 border border-red-500/20 text-xs">
+                        <div class="font-bold text-red-700  text-sm flex items-center gap-2 mb-2">
+                            <i class="fa-solid fa-lock"></i> Soldered RAM (Non-Upgradable)
+                        </div>
+                        <p class="text-gray-700  leading-relaxed">
+                            The RAM chip is permanently welded to the motherboard. If you buy an <strong>8GB Soldered</strong> laptop, you can NEVER upgrade it. When your CSE coding projects grow in 3rd year, you will be forced to buy a new laptop.
+                        </p>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-green-500/10 border border-green-500/20 text-xs">
+                        <div class="font-bold text-green-700  text-sm flex items-center gap-2 mb-2">
+                            <i class="fa-solid fa-unlock"></i> Expandable RAM (SODIMM Slots)
+                        </div>
+                        <p class="text-gray-700  leading-relaxed">
+                            The laptop has removable memory slots. Even if you buy an 8GB model today, you can pop open the back panel and insert a second 8GB stick (~₹1,500) later to instantly turn it into a high performance 16GB laptop.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- RAM Capacity Rating Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-xs">
+                    <div class="p-4 rounded-xl bg-red-500/10 border border-red-500/20">
+                        <span class="px-2 py-0.5 rounded bg-red-500 text-white font-bold text-[10px] uppercase">RED - BAD IN 2026</span>
+                        <h4 class="font-bold text-base text-gray-900  mt-2">8GB RAM</h4>
+                        <p class="text-gray-600  mt-1 text-[11px]">
+                            Windows 11 takes ~4GB alone. Leaving only 4GB for your apps. Freezes when opening Zoom + Chrome.
+                        </p>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-green-500/10 border border-green-500/20">
+                        <span class="px-2 py-0.5 rounded bg-green-500 text-white font-bold text-[10px] uppercase">GREEN - SWEET SPOT</span>
+                        <h4 class="font-bold text-base text-gray-900  mt-2">16GB RAM</h4>
+                        <p class="text-gray-600  mt-1 text-[11px]">
+                            The standard requirement for engineering students. Handles web dev, 30 Chrome tabs, and compilation easily.
+                        </p>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-amber-500/10 border border-amber-500/20">
+                        <span class="px-2 py-0.5 rounded bg-amber-500 text-white font-bold text-[10px] uppercase">ORANGE - HEAVY DEV</span>
+                        <h4 class="font-bold text-base text-gray-900  mt-2">32GB RAM</h4>
+                        <p class="text-gray-600  mt-1 text-[11px]">
+                            Only needed for heavy AI/ML dataset training, Android Studio emulators, and local LLMs.
+                        </p>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-purple-500/10 border border-purple-500/20">
+                        <span class="px-2 py-0.5 rounded bg-purple-500 text-white font-bold text-[10px] uppercase">PURPLE - OVERKILL</span>
+                        <h4 class="font-bold text-base text-gray-900  mt-2">64GB+ RAM</h4>
+                        <p class="text-gray-600  mt-1 text-[11px]">
+                            Waste of money for college students. Designed for enterprise servers and 3D animation studios.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========================================================================= -->
+        <!-- SECTION 4: MISCELLANEOUS & PRACTICAL HARDWARE                             -->
+        <!-- ========================================================================= -->
+        <section id="section-misc" class="tab-section hidden space-y-6">
+            <div class="glass-panel rounded-3xl p-6 sm:p-8 shadow-macos">
+                <div class="mb-6">
+                    <h2 class="text-2xl font-bold text-gray-900  flex items-center gap-2.5">
+                        <i class="fa-solid fa-hard-drive text-apple-green"></i> Storage, Camera, Display & Ports
+                    </h2>
+                    <p class="text-xs sm:text-sm text-gray-500  mt-1">
+                        Practical everyday hardware details that salespeople in shops often gloss over.
+                    </p>
+                </div>
+
+                <!-- Interactive Storage Calculator Visualizer -->
+                <div class="p-6 rounded-2xl bg-white/80  border border-gray-200  shadow-sm mb-8">
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 mb-4">
+                        <div>
+                            <h3 class="text-base font-bold text-gray-900  flex items-center gap-2">
+                                <i class="fa-solid fa-box-archive text-apple-green"></i> Storage Visualizer: "How Much Can My SSD Hold?"
+                            </h3>
+                            <p class="text-xs text-gray-600 ">
+                                Drag the slider to see what fits inside different storage sizes:
+                            </p>
+                        </div>
+                        <span id="ssd-size-display" class="text-xl font-extrabold text-apple-green bg-green-500/10 px-4 py-1.5 rounded-xl border border-green-500/20">
+                            512 GB SSD
+                        </span>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6">
+                        <button type="button" id="ssd-option-256" onclick="updateSSDVisualizer(0)" class="ssd-option p-3 rounded-xl bg-gray-100 border text-left transition hover:border-apple-green">
+                            <div class="font-bold text-gray-900 text-sm">256 GB</div>
+                            <div class="text-[11px] text-gray-500 mt-1">Budget / tight</div>
+                        </button>
+                        <button type="button" id="ssd-option-512" onclick="updateSSDVisualizer(1)" class="ssd-option p-3 rounded-xl bg-green-500/10 border border-green-500/30 text-left transition hover:border-apple-green">
+                            <div class="font-bold text-apple-green text-sm">512 GB</div>
+                            <div class="text-[11px] text-green-700 mt-1">Sweet spot</div>
+                        </button>
+                        <button type="button" id="ssd-option-1tb" onclick="updateSSDVisualizer(2)" class="ssd-option p-3 rounded-xl bg-gray-100 border text-left transition hover:border-apple-green">
+                            <div class="font-bold text-gray-900 text-sm">1 TB</div>
+                            <div class="text-[11px] text-gray-500 mt-1">High capacity</div>
+                        </button>
+                    </div>
+
+                    <!-- Visual Grid of What Fits -->
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs">
+                        <div class="p-3.5 rounded-xl bg-gray-100  text-center">
+                            <i class="fa-solid fa-film text-apple-blue text-xl mb-1"></i>
+                            <div class="font-bold text-gray-900 ">HD Movies (1080p)</div>
+                            <div id="ssd-movies-count" class="text-sm font-extrabold text-apple-blue mt-1">~100 Movies</div>
+                        </div>
+
+                        <div class="p-3.5 rounded-xl bg-gray-100  text-center">
+                            <i class="fa-solid fa-laptop-code text-apple-purple text-xl mb-1"></i>
+                            <div class="font-bold text-gray-900 ">CSE Dev Suites</div>
+                            <div id="ssd-apps-count" class="text-sm font-extrabold text-apple-purple mt-1">~40 Full Tools</div>
+                        </div>
+
+                        <div class="p-3.5 rounded-xl bg-gray-100  text-center">
+                            <i class="fa-solid fa-image text-apple-green text-xl mb-1"></i>
+                            <div class="font-bold text-gray-900 ">Photos & Docs</div>
+                            <div id="ssd-photos-count" class="text-sm font-extrabold text-apple-green mt-1">~60,000 Photos</div>
+                        </div>
+
+                        <div class="p-3.5 rounded-xl bg-gray-100  text-center">
+                            <i class="fa-solid fa-gamepad text-apple-orange text-xl mb-1"></i>
+                            <div class="font-bold text-gray-900 ">AAA Games</div>
+                            <div id="ssd-games-count" class="text-sm font-extrabold text-apple-orange mt-1">~5 Heavy Games</div>
+                        </div>
+                    </div>
+
+                    <div id="ssd-verdict-note" class="mt-4 p-3 rounded-xl bg-green-500/10 border border-green-500/20 text-xs text-green-800 ">
+                        <strong>512GB SSD (Sweet Spot):</strong> Recommended for 90% of college students. Leaves ample room for dual-booting Linux alongside Windows.
+                    </div>
+                </div>
+
+                <!-- Webcams & Cameras Honest Evaluation -->
+                <div class="p-5 rounded-2xl bg-white/60  border border-gray-200/60  space-y-4 mb-8">
+                    <h3 class="text-base font-bold text-gray-900  flex items-center gap-2">
+                        <i class="fa-solid fa-video text-apple-blue"></i> Webcams: Is 1080p Overhyped?
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+                        <div class="p-3.5 rounded-xl bg-amber-500/10 border border-amber-500/20">
+                            <div class="font-bold text-amber-700 ">720p HD Webcam</div>
+                            <p class="text-gray-600  mt-1 text-[11px]">
+                                Looks slightly grainy in dark rooms, but perfectly fine for daily college classes and online vivas. Do NOT pay ₹10k extra just for camera upgrade.
+                            </p>
+                        </div>
+
+                        <div class="p-3.5 rounded-xl bg-green-500/10 border border-green-500/20">
+                            <div class="font-bold text-green-700 ">1080p Full HD Webcam</div>
+                            <p class="text-gray-600  mt-1 text-[11px]">
+                                Crisp video quality for job interviews, placements, and video presentation recordings. A nice feature to have.
+                            </p>
+                        </div>
+
+                        <div class="p-3.5 rounded-xl bg-blue-500/10 border border-blue-500/20">
+                            <div class="font-bold text-blue-700 "><i class="fa-solid fa-shield-halved mr-1"></i> Physical Privacy Shutter</div>
+                            <p class="text-gray-600  mt-1 text-[11px]">
+                                MUST HAVE feature! A physical slider switch to block the camera lens guarantees total privacy against accidental video turns on.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Display Technologies & Viewing Angles -->
+                <div class="p-5 rounded-2xl bg-white/60  border border-gray-200/60  space-y-4 mb-8">
+                    <h3 class="text-base font-bold text-gray-900  flex items-center gap-2">
+                        <i class="fa-solid fa-desktop text-apple-orange"></i> Screen & Display Panel Guide
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+                        <div class="p-3.5 rounded-xl bg-red-500/10 border border-red-500/20">
+                            <span class="px-2 py-0.5 rounded bg-red-500 text-white font-bold text-[10px] uppercase">RED - AVOID</span>
+                            <div class="font-bold text-gray-900  mt-1">TN Panel (Twisted Nematic)</div>
+                            <p class="text-gray-600  text-[11px] mt-1">
+                                Terrible viewing angles. Looking at the screen from slight side angles turns colors completely black or washed out.
+                            </p>
+                        </div>
+
+                        <div class="p-3.5 rounded-xl bg-green-500/10 border border-green-500/20">
+                            <span class="px-2 py-0.5 rounded bg-green-500 text-white font-bold text-[10px] uppercase">GREEN - SWEET SPOT</span>
+                            <div class="font-bold text-gray-900  mt-1">IPS Panel (Full HD / 300 nits)</div>
+                            <p class="text-gray-600  text-[11px] mt-1">
+                                Crisp text, wide viewing angles, easy on the eyes during late night coding sessions.
+                            </p>
+                        </div>
+
+                        <div class="p-3.5 rounded-xl bg-amber-500/10 border border-amber-500/20">
+                            <span class="px-2 py-0.5 rounded bg-amber-500 text-white font-bold text-[10px] uppercase">ORANGE - BATTERY HEAVY</span>
+                            <div class="font-bold text-gray-900  mt-1">OLED Display</div>
+                            <p class="text-gray-600  text-[11px] mt-1">
+                                Stunning true-black colors for movies, but consumes significantly more battery.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ports & Connectivity Checklist for CSE -->
+                <div class="p-5 rounded-2xl bg-white/60  border border-gray-200/60 ">
+                    <h3 class="text-base font-bold text-gray-900  flex items-center gap-2 mb-3">
+                        <i class="fa-solid fa-plug text-apple-purple"></i> Essential Port Checklist for CSE Labs
+                    </h3>
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
+                        <div class="p-3 rounded-xl bg-gray-100  border flex items-center space-x-2">
+                            <i class="fa-solid fa-circle-check text-apple-green text-sm"></i>
+                            <div>
+                                <div class="font-bold text-gray-900 ">HDMI Port</div>
+                                <div class="text-[10px] text-gray-500">For lab projectors</div>
+                            </div>
+                        </div>
+
+                        <div class="p-3 rounded-xl bg-gray-100  border flex items-center space-x-2">
+                            <i class="fa-solid fa-circle-check text-apple-green text-sm"></i>
+                            <div>
+                                <div class="font-bold text-gray-900 ">USB Type-C</div>
+                                <div class="text-[10px] text-gray-500">Fast data & charging</div>
+                            </div>
+                        </div>
+
+                        <div class="p-3 rounded-xl bg-gray-100  border flex items-center space-x-2">
+                            <i class="fa-solid fa-circle-check text-apple-green text-sm"></i>
+                            <div>
+                                <div class="font-bold text-gray-900 ">USB 3.2 Type-A</div>
+                                <div class="text-[10px] text-gray-500">Pendrives & mouse</div>
+                            </div>
+                        </div>
+
+                        <div class="p-3 rounded-xl bg-gray-100  border flex items-center space-x-2">
+                            <i class="fa-solid fa-circle-check text-apple-green text-sm"></i>
+                            <div>
+                                <div class="font-bold text-gray-900 ">3.5mm Audio Jack</div>
+                                <div class="text-[10px] text-gray-500">Wired earphones</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        /* Navigation Tab Switcher */
+        function switchTab(tabId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.tab-section');
+            sections.forEach(sec => sec.classList.add('hidden'));
+
+            // Deactivate all tab buttons
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('active');
+                btn.classList.add('text-gray-600');
+            });
+
+            // Show target section
+            document.getElementById(`section-${tabId}`).classList.remove('hidden');
+
+            // Activate button
+            const activeBtn = document.getElementById(`tab-btn-${tabId}`);
+            activeBtn.classList.add('active');
+            activeBtn.classList.remove('text-gray-600');
+        }
+
+        /* Interactive CPU Finder Logic */
+        function recommendCPU(type) {
+            const box = document.getElementById('cpu-recommendation-box');
+
+            if (type === 'basic') {
+                box.className = "p-4 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-900  text-xs";
+                box.innerHTML = `
+                    <div class="font-bold text-sm mb-1"><i class="fa-solid fa-circle-check mr-1"></i> Recommended: Intel Core i3 (12th/13th Gen) or AMD Ryzen 3</div>
+                    <p class="text-[11px] opacity-90">Provides smooth performance for YouTube, Zoom lectures, Excel, and light document editing without overspending.</p>
+                `;
+            } else if (type === 'cse') {
+                box.className = "p-4 rounded-xl bg-green-500/10 border border-green-500/30 text-green-900  text-xs";
+                box.innerHTML = `
+                    <div class="font-bold text-sm mb-1"><i class="fa-solid fa-circle-check mr-1"></i> Recommended Sweet Spot: Intel Core i5 / AMD Ryzen 5 / Apple M1/M2/M3</div>
+                    <p class="text-[11px] opacity-90">The ideal balance for Computer Science! Easily compiles C++, Python, Java code, runs web servers, and stays fast for 4+ years.</p>
+                `;
+            } else if (type === 'aiml') {
+                box.className = "p-4 rounded-xl bg-purple-500/10 border border-purple-500/30 text-purple-900  text-xs";
+                box.innerHTML = `
+                    <div class="font-bold text-sm mb-1"><i class="fa-solid fa-bolt mr-1"></i> Recommended: Intel Core i7 / AMD Ryzen 7 + Nvidia Dedicated GPU</div>
+                    <p class="text-[11px] opacity-90">Needed for training neural networks, machine learning algorithms, and high-FPS gaming. Ensure it is paired with an Nvidia RTX GPU.</p>
+                `;
+            }
+        }
+
+        /* Interactive RAM Calculator */
+        function calculateRAMUsage() {
+            let total = 4.0; // Base Windows OS usage
+
+            if (document.getElementById('ram-app-chrome').checked) total += 2.0;
+            if (document.getElementById('ram-app-vscode').checked) total += 1.2;
+            if (document.getElementById('ram-app-zoom').checked) total += 1.5;
+            if (document.getElementById('ram-app-android').checked) total += 4.5;
+            if (document.getElementById('ram-app-docker').checked) total += 4.0;
+            if (document.getElementById('ram-app-spotify').checked) total += 0.5;
+            if (document.getElementById('ram-app-ai').checked) total += 6.0;
+            if (document.getElementById('ram-app-game').checked) total += 5.0;
+
+            const valDisplay = document.getElementById('ram-meter-value');
+            const bar = document.getElementById('ram-meter-bar');
+            const verdict = document.getElementById('ram-meter-verdict');
+
+            valDisplay.innerText = `${total.toFixed(1)} GB RAM`;
+
+            // Percentage calculated against 16GB baseline
+            let percent = (total / 16) * 100;
+            if (percent > 100) percent = 100;
+            bar.style.width = `${percent}%`;
+
+            if (total <= 8.0) {
+                bar.className = "h-full bg-apple-green rounded-full transition-all duration-500";
+                verdict.innerHTML = `<span class="text-apple-green font-bold"><i class="fa-solid fa-check"></i> 8GB RAM can barely handle this load.</span> It's right at the limit. We still recommend 16GB for comfort.`;
+            } else if (total <= 16.0) {
+                bar.className = "h-full bg-apple-blue rounded-full transition-all duration-500";
+                verdict.innerHTML = `<span class="text-apple-blue font-bold"><i class="fa-solid fa-circle-check"></i> Perfect for 16GB RAM!</span> Smooth multitasking without lag or stutter.`;
+            } else {
+                bar.className = "h-full bg-apple-purple rounded-full transition-all duration-500";
+                verdict.innerHTML = `<span class="text-apple-purple font-bold"><i class="fa-solid fa-triangle-exclamation"></i> Demands 32GB RAM!</span> You are running heavy Virtual Machines or AI training datasets.`;
+            }
+        }
+
+        /* Interactive SSD Visualizer */
+        function updateSSDVisualizer(val) {
+            const index = parseInt(val);
+            document.querySelectorAll('.ssd-option').forEach(btn => {
+                btn.classList.remove('bg-green-500/10', 'border-green-500/30');
+                btn.classList.add('bg-gray-100', 'border-gray-200');
+            });
+            const activeOption = document.getElementById(index === 0 ? 'ssd-option-256' : index === 1 ? 'ssd-option-512' : 'ssd-option-1tb');
+            if (activeOption) {
+                activeOption.classList.remove('bg-gray-100', 'border-gray-200');
+                activeOption.classList.add('bg-green-500/10', 'border-green-500/30');
+            }
+            const sizeDisplay = document.getElementById('ssd-size-display');
+            const movies = document.getElementById('ssd-movies-count');
+            const apps = document.getElementById('ssd-apps-count');
+            const photos = document.getElementById('ssd-photos-count');
+            const games = document.getElementById('ssd-games-count');
+            const verdict = document.getElementById('ssd-verdict-note');
+
+            if (index === 0) {
+                // 256GB
+                sizeDisplay.innerText = "256 GB SSD";
+                movies.innerText = "~40 Movies";
+                apps.innerText = "~15 Basic Tools";
+                photos.innerText = "~20,000 Photos";
+                games.innerText = "~1-2 Heavy Games";
+
+                verdict.className = "mt-4 p-3 rounded-xl bg-red-500/10 border border-red-500/20 text-xs text-red-800 ";
+                verdict.innerHTML = "<strong>256GB SSD (Tight / Red Flag):</strong> OS + updates take 60GB. Leaving little room for heavy CSE software or Linux dual-booting.";
+            } else if (index === 1) {
+                // 512GB
+                sizeDisplay.innerText = "512 GB SSD";
+                movies.innerText = "~100 Movies";
+                apps.innerText = "~40 Full Tools";
+                photos.innerText = "~60,000 Photos";
+                games.innerText = "~5 Heavy Games";
+
+                verdict.className = "mt-4 p-3 rounded-xl bg-green-500/10 border border-green-500/20 text-xs text-green-800 ";
+                verdict.innerHTML = "<strong>512GB SSD (Recommended Sweet Spot):</strong> Plenty of space for Windows, Ubuntu Linux dual-boot, coding projects, and personal media.";
+            } else if (index === 2) {
+                // 1TB
+                sizeDisplay.innerText = "1 TB (1024 GB) SSD";
+                movies.innerText = "~250+ Movies";
+                apps.innerText = "100+ Huge Suites";
+                photos.innerText = "~150,000 Photos";
+                games.innerText = "~15+ Heavy Games";
+
+                verdict.className = "mt-4 p-3 rounded-xl bg-blue-500/10 border border-blue-500/20 text-xs text-blue-800 ";
+                verdict.innerHTML = "<strong>1TB SSD (High Capacity):</strong> Great if you plan to store massive AI models or high-end 100GB gaming titles like GTA V / Cyberpunk.";
+            }
+        }
+
+        // Global search removed.
+
+        // Initialize RAM calculator on boot
+        window.onload = function() {
+            calculateRAMUsage();
+        };
+    </script>
+</body>
+</html>
